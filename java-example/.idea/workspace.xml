@@ -91,17 +91,17 @@
       <file leaf-file-name="CheckCountries.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckCountries.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2156">
+            <state relative-caret-position="1166">
               <caret line="167" column="36" selection-start-line="167" selection-start-column="36" selection-end-line="167" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckProductPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CheckProductPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckProductPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
+            <state relative-caret-position="550">
               <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -110,14 +110,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckRegistration.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SimpleLogin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/SimpleLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckRegistration.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckRegistration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-2112">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -411,8 +419,8 @@
         <option value="$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckStiker.java" />
         <option value="$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/Tester.java" />
         <option value="$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckCountries.java" />
-        <option value="$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckRegistration.java" />
         <option value="$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckProductPage.java" />
+        <option value="$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckRegistration.java" />
       </list>
     </option>
   </component>
@@ -527,7 +535,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.CheckProductPage">
+  <component name="RunManager" selected="JUnit.CheckRegistration">
     <configuration default="false" name="LeftMenuClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -920,8 +928,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CheckProductPage" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CheckRegistration" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CheckRegistration" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CheckProductPage" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.CheckCountries" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.CheckStiker" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.LeftMenuClick" />
@@ -942,39 +950,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CheckProductPage - 2016.12.10 at 14h 40m 39s.xml">
-      <configuration name="CheckProductPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckProductPage - 2016.12.10 at 14h 41m 39s.xml">
-      <configuration name="CheckProductPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckProductPage - 2016.12.10 at 16h 05m 40s.xml">
-      <configuration name="CheckProductPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckProductPage - 2016.12.10 at 18h 14m 28s.xml">
-      <configuration name="CheckProductPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckProductPage - 2016.12.10 at 18h 16m 28s.xml">
-      <configuration name="CheckProductPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckProductPage - 2016.12.10 at 18h 17m 54s.xml">
-      <configuration name="CheckProductPage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckRegistration - 2016.12.10 at 17h 12m 12s.xml">
+    <history-entry file="CheckRegistration - 2016.12.10 at 22h 22m 29s.xml">
       <configuration name="CheckRegistration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckRegistration - 2016.12.10 at 17h 13m 32s.xml">
+    <history-entry file="CheckRegistration - 2016.12.10 at 22h 30m 40s.xml">
       <configuration name="CheckRegistration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckRegistration - 2016.12.10 at 17h 15m 03s.xml">
+    <history-entry file="CheckRegistration - 2016.12.10 at 22h 32m 34s.xml">
       <configuration name="CheckRegistration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CheckRegistration - 2016.12.10 at 17h 16m 54s.xml">
+    <history-entry file="CheckRegistration - 2016.12.10 at 22h 37m 28s.xml">
+      <configuration name="CheckRegistration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckRegistration - 2016.12.10 at 22h 38m 29s.xml">
+      <configuration name="CheckRegistration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckRegistration - 2016.12.10 at 22h 40m 05s.xml">
+      <configuration name="CheckRegistration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckRegistration - 2016.12.10 at 22h 52m 30s.xml">
+      <configuration name="CheckRegistration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckRegistration - 2016.12.10 at 22h 57m 06s.xml">
+      <configuration name="CheckRegistration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckRegistration - 2016.12.10 at 23h 06m 49s.xml">
+      <configuration name="CheckRegistration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CheckRegistration - 2016.12.10 at 23h 09m 56s.xml">
       <configuration name="CheckRegistration" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1046,15 +1054,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckRegistration.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1330,14 +1330,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/Tester.java" />
-    <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/SimpleLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/MyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1362,32 +1354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckCountries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2156">
-          <caret line="167" column="36" selection-start-line="167" selection-start-column="36" selection-end-line="167" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -1406,14 +1372,6 @@
             <element signature="e#6429#6593#0" expanded="true" />
             <element signature="e#6592#6593#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1446,11 +1404,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckProductPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
+        <state relative-caret-position="550">
           <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckCountries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="167" column="36" selection-start-line="167" selection-start-column="36" selection-end-line="167" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/SimpleLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2112">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
