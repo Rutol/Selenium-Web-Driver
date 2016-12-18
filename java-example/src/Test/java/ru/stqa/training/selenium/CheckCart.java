@@ -83,7 +83,6 @@ public class CheckCart {
     
             driver.findElement(By.name("add_cart_product")).click();
             // добавляем продукт в корзину
-            //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("cart")));
 
             wait.until(textToBePresentInElement(
                     Cart.findElement(By.cssSelector("span.quantity")),
