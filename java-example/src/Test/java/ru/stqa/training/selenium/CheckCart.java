@@ -1,0 +1,155 @@
+package ru.stqa.training.selenium;
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
+
+/**
+ * Created by Rutol on 14.12.2016.
+ */
+public class CheckCart {
+
+    private WebDriver driver;
+    private WebDriverWait wait;
+    List<WebElement> prodList;
+    WebElement productUnit, Cart, cartQuantity, prodTable;
+    int prodQuantity, i, j, k, k1, p, cartQuantityBefore, cartQuantityAfter;
+    String[] prodName;
+
+
+    @Before
+    public void start() {
+        ChromeOptions options = new ChromeOptions();
+        //Указан путь к последней версии Chrome в portable варианте
+        options.setBinary("D:\\Tools\\GoogleChromePortable64\\GoogleChromePortable.exe");
+
+        driver = new ChromeDriver(options); //инициализация драйвера
+
+        wait = new WebDriverWait(driver,10);
+    }
+
+
+    @Test
+    public void myCheckCart() {
+
+        prodName = new String[3];
+
+        for (i=0; i<3;i++) {
+            driver.get("http://localhost/litecart/en/"); //открыть главную страницу магазина
+            wait.until(titleContains("Online Store"));
+
+            prodList = driver.findElements(By.cssSelector("li.product"));
+            // определение списка товаров на главной странице
+
+            p=1; j=0;
+            while(p>0) {
+                k=1; k1=1;
+                productUnit = prodList.get(j);    // выбираем конкретный продукт
+                prodName[i]=productUnit.findElement(By.cssSelector("div.name")).getText();
+                // получаем имя продукта
+
+                if(i==1) {  // для 2-го товара
+                    // проверяем, что выбранный товар не совпадает с предыдущим
+                    k=prodName[i].compareToIgnoreCase(prodName[i-1]);
+                }
+
+                if (i==2) { // для 3-го товара
+                    // проверяем, что выбранный товар не совпадает с предыдущими
+                    k=prodName[i].compareToIgnoreCase(prodName[i-1]);
+                    k1=prodName[i].compareToIgnoreCase(prodName[i-2]);
+                }
+
+                if((k==0)||(k1==0)) { j++; } // переходим на следующий продукт в списке
+                else { p=0; }  // подходящий продукт найден - прерываем цикл
+            }
+
+            productUnit.click(); //щелкаем по странице продукта
+            wait.until(titleContains(prodName[i]));
+
+            // WebElement element = wait.until(presenceOfElementLocated(By.name("q")));
+            //prCart = driver.findElement(By.id("cart")); // нашли корзину
+            Cart = wait.until(presenceOfElementLocated(By.id("cart"))); // нашли корзину
+            //cartQuantity = Cart.findElement(By.cssSelector("span.quantity"));
+            // указатель количества товаров в корзине
+            //cartQuantityBefore = Integer.parseInt(cartQuantity.getText());
+
+            k=prodName[i].compareToIgnoreCase("Yellow Duck");
+            // Проверяем, что выбранный товар не Yellow Duck - требует доп. обработки
+            if (k==0) {
+                new Select(driver.findElement(By.name("options[Size]"))).selectByVisibleText("Medium +$2.50");
+            }
+
+            driver.findElement(By.name("add_cart_product")).click();
+            // добавляем продукт в корзину
+            //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("cart")));
+            int k2=i+1;
+            wait.until(textToBePresentInElement(Cart.findElement(By.cssSelector("span.quantity")),Integer.toString(k2)));
+            // ждем изменения количества
+
+
+            //Cart = driver.findElement(By.id("cart"));
+                    //wait.until(presenceOfElementLocated(By.id("cart"))); // нашли корзину
+
+            //cartQuantity = Cart.findElement(By.cssSelector("span.quantity"));
+            // находим количество товаров в корзине заново
+
+            //cartQuantityAfter = Integer.parseInt(cartQuantity.getText());
+
+            //wait = new WebDriverWait(driver,10);
+
+            //Assert.assertTrue((cartQuantityAfter-cartQuantityBefore)==1);
+
+            //wait = new WebDriverWait(driver,10);
+        }
+        driver.get("http://localhost/litecart/en/"); //открыть главную страницу магазина
+
+        driver.findElement(By.id("cart")).click(); // открываем корзину
+        wait.until(titleContains("Checkout")); // ожидаем открытия страницы корзины
+
+        for(int n=1;n<=3;n++) {
+            prodTable = wait.until(presenceOfElementLocated(By.id("order_confirmation-wrapper")));
+            // находим таблицу товаров в корзине
+
+            prodList = driver.findElements(By.cssSelector("li.shortcut"));
+            if(prodList.size()>0) {
+                prodList.get(0).click();
+                /*
+                Поскольку изначально картинки продуктов на экране сменяются, мы просто определяем
+                список маленьких изображений продуктов и щелкаем по нему.
+                При этом изображение продукта и все связанные с ним служебные кнопки фиксируются.
+                 */
+            }
+
+            //driver.findElement(By.cssSelector("[name=quantity]")).sendKeys("1");
+
+            driver.findElement(By.name("remove_cart_item")).click();
+            // кликнуть по кнопке удаления товара Remove
+            wait.until(stalenessOf(prodTable));
+        }
+        //prodList = driver.findElements(By.cssSelector("li.shortcut"));
+        driver.get("http://localhost/litecart/en/");
+        wait.until(titleContains("Online Store"));
+
+    }
+
+
+    @After
+    public void stop() {
+        driver.quit();
+        driver = null;
+    }
+
+
+}
