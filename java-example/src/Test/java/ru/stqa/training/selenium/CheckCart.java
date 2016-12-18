@@ -1,7 +1,6 @@
 package ru.stqa.training.selenium;
 
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -24,8 +23,8 @@ public class CheckCart {
     private WebDriver driver;
     private WebDriverWait wait;
     List<WebElement> prodList;
-    WebElement productUnit, Cart, cartQuantity, prodTable;
-    int prodQuantity, i, j, k, k1, p, cartQuantityBefore, cartQuantityAfter;
+    WebElement productUnit, Cart, prodTable;
+    int i, j, k, k1, p;
     String[] prodName;
 
 
@@ -78,12 +77,7 @@ public class CheckCart {
             productUnit.click(); //щелкаем по странице продукта
             wait.until(titleContains(prodName[i]));
 
-            // WebElement element = wait.until(presenceOfElementLocated(By.name("q")));
-            //prCart = driver.findElement(By.id("cart")); // нашли корзину
-            Cart = wait.until(presenceOfElementLocated(By.id("cart"))); // нашли корзину
-            //cartQuantity = Cart.findElement(By.cssSelector("span.quantity"));
-            // указатель количества товаров в корзине
-            //cartQuantityBefore = Integer.parseInt(cartQuantity.getText());
+             Cart = wait.until(presenceOfElementLocated(By.id("cart"))); // нашли корзину
 
             k=prodName[i].compareToIgnoreCase("Yellow Duck");
             // Проверяем, что выбранный товар не Yellow Duck - требует доп. обработки
@@ -93,25 +87,10 @@ public class CheckCart {
 
             driver.findElement(By.name("add_cart_product")).click();
             // добавляем продукт в корзину
-            //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("cart")));
-            int k2=i+1;
-            wait.until(textToBePresentInElement(Cart.findElement(By.cssSelector("span.quantity")),Integer.toString(k2)));
+
+            wait.until(textToBePresentInElement(Cart.findElement(By.cssSelector("span.quantity")),Integer.toString(i+1)));
             // ждем изменения количества
 
-
-            //Cart = driver.findElement(By.id("cart"));
-                    //wait.until(presenceOfElementLocated(By.id("cart"))); // нашли корзину
-
-            //cartQuantity = Cart.findElement(By.cssSelector("span.quantity"));
-            // находим количество товаров в корзине заново
-
-            //cartQuantityAfter = Integer.parseInt(cartQuantity.getText());
-
-            //wait = new WebDriverWait(driver,10);
-
-            //Assert.assertTrue((cartQuantityAfter-cartQuantityBefore)==1);
-
-            //wait = new WebDriverWait(driver,10);
         }
         driver.get("http://localhost/litecart/en/"); //открыть главную страницу магазина
 
@@ -132,13 +111,11 @@ public class CheckCart {
                  */
             }
 
-            //driver.findElement(By.cssSelector("[name=quantity]")).sendKeys("1");
-
             driver.findElement(By.name("remove_cart_item")).click();
             // кликнуть по кнопке удаления товара Remove
             wait.until(stalenessOf(prodTable));
         }
-        //prodList = driver.findElements(By.cssSelector("li.shortcut"));
+
         driver.get("http://localhost/litecart/en/");
         wait.until(titleContains("Online Store"));
 
