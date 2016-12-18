@@ -114,11 +114,9 @@
       <file leaf-file-name="CheckCart.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckCart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="242">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -965,6 +963,9 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="CheckCart - 2016.12.17 at 23h 49m 02s.xml">
+      <configuration name="CheckCart" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CheckCart - 2016.12.18 at 13h 09m 23s.xml">
       <configuration name="CheckCart" configurationId="JUnit" />
     </history-entry>
@@ -990,9 +991,6 @@
       <configuration name="CheckCart" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CheckCart - 2016.12.18 at 13h 44m 20s.xml">
-      <configuration name="CheckCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CheckCart - 2016.12.18 at 14h 00m 24s.xml">
       <configuration name="CheckCart" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1445,11 +1443,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/java/ru/stqa/training/selenium/CheckCart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
